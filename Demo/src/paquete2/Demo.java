@@ -28,18 +28,18 @@ public class Demo {
         // Despues de impotar las clases, utilizamos un prinf y llamamos las 
         // funciones para que de esa manera
         // poder completar la frase deseada
+
         cadena = String.format("%s con %d\n", Mensaje.obtenerMensaje(),
                 Informacion.obtenerHabitantes());
-        System.err.println("ingrese un numero ");
+        System.out.printf("ingrese un numero del 1 al 5 para presentar "
+                + "la cadena original y un numero mayor a 5 para presentarlo en "
+                + "mayusculas");
         num = entrada.nextInt();
-        if (num <= 5) {
-            System.out.println(cadena);
-
+        if (num >= 1 && num <= 5) {
+            System.out.printf("%s", cadena);
         } else {
-        
-        System.out.printf("%s",cadena.toUpperCase());
-
+            System.out.printf("%s", cadena.toUpperCase());
+        }
     }
-}
 
 }
